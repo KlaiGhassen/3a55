@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Afficher">
+   <children>
+      <TableView fx:id="userTv" layoutX="40.0" layoutY="30.0" prefHeight="243.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="firstNameCol" prefWidth="138.85708618164062" text="FirstName" />
+          <TableColumn fx:id="lastNameCol" prefWidth="114.28570556640625" text="LastName" />
+            <TableColumn fx:id="ageCol" prefWidth="97.71429443359375" text="Age" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
